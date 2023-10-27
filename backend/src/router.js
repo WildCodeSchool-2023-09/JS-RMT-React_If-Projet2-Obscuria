@@ -19,6 +19,16 @@ router.get("/items", (req, res) => {
     });
 });
 
+router.get("/films", (req, res) => {
+  client
+    .query("select * from film")
+    .then((result) => res.status(200).json(result[0]))
+    .catch((error) => {
+      console.error(error);
+      res.sendStatus(500);
+    });
+});
+
 // Route to get a specific item by ID
 router.get("/items/:id", (req, res) => {
   res.send("Hello World!");
