@@ -1,17 +1,23 @@
 import "./App.css";
+import { useLoaderData } from "react-router-dom";
 
 function App() {
-  const getAllItems = () => {
-    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/items`)
-      .then((response) => response.json())
-      .then((data) => console.info(data))
-      .catch((err) => console.error(err));
-  };
+  const films = useLoaderData();
   return (
-    <div className="App">
-      <button onClick={getAllItems} type="button">
-        coucou
-      </button>
+    <div>
+      <div className="contener">
+        {films.map((film) => {
+          return (
+            <div className="carte">
+              <img
+                className="borderimg"
+                src={film.poster_path}
+                alt={film.original_title}
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
