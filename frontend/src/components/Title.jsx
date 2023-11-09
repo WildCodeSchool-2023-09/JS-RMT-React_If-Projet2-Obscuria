@@ -1,8 +1,8 @@
 function Title() {
   return (
-    <div>
-      <h1>OBSCURIA</h1>
-      <h4>A L'AFFICHE</h4>
+    <div className="top-container">
+      <h1 className="title-website">OBSCURIA</h1>
+      <h4 className="display-title">A L'AFFICHE</h4>
     </div>
   );
 }
