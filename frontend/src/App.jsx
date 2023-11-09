@@ -1,23 +1,18 @@
+import Title from "./components/Title";
+import Footer from "./components/Footer";
+import Affiche from "./components/Film";
+import Form from "./components/Form";
+import Nav from "./components/Nav";
 import "./App.css";
-import { useLoaderData } from "react-router-dom";
 
 function App() {
-  const films = useLoaderData();
   return (
     <div>
-      <div className="contener">
-        {films.map((film) => {
-          return (
-            <div className="carte">
-              <img
-                className="borderimg"
-                src={film.poster_path}
-                alt={film.original_title}
-              />
-            </div>
-          );
-        })}
-      </div>
+      <Title />
+      <Nav />
+      <Affiche />
+      <Form />
+      <Footer />
     </div>
   );
 }

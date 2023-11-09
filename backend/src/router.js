@@ -12,7 +12,7 @@ const client = require("../database/client");
 
 router.get("/films", (req, res) => {
   client
-    .query("select * from film")
+    .query("select * from film LIMIT 8 ")
     .then((result) => res.status(200).json(result[0]))
     .catch((error) => {
       console.error(error);
