@@ -10,43 +10,6 @@
   align-items: center;
 }
 
-.carrouselle-container {
-  padding: 5px;
-  width: 90%;
-  height: 100px;
-}
-.top-container {
-  height: 228px;
-  width: 100%;
-  background: #212240;
-  text-align: center;
-  padding-top: 25px;
-}
-.title-website {
-  color: #f0e448;
-  font-family: "Monoton", sans-serif;
-  font-size: 60px;
-  font-weight: 300;
-  padding-bottom: 20px;
-}
-.display-title {
-  font-family: "Montserrat", sans-serif;
-  color: #ffff;
-  text-decoration: underline;
-  font-size: 27px;
-}
-.pub {
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-.pub-img {
-  background-color: #212240;
-  width: 333px;
-  height: 111px;
-}
-
 .carte {
   box-shadow: 1px 1px 20px 8px rgba(0, 0, 0, 0.47);
   display: flex;
@@ -59,166 +22,57 @@
 
 body {
   background-color: #546fe4;
+  position: relative;
 }
 
 .borderimg {
   border-radius: 20px;
 }
+
 .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-form > input {
-  width: 285px;
-  height: 42px;
-  border-radius: 20px;
-  background: #ffff;
-  border: none;
-  padding-left: 20px;
-  font-size: 13px;
-  font-weight: bold;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  width: 100%;
-}
-label {
-  display: flex;
-  width: 66%;
-  margin-bottom: -5px;
-  font-size: 13px;
-  font-weight: bold;
-}
-textarea {
-  width: 285px;
-  height: 147px;
-  border-radius: 15px;
-}
-.top-form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: 70%;
-  margin-bottom: 15px;
-  font-size: 13px;
-  font-weight: bold;
-}
-.contact {
-  color: yellow;
-  font-size: 28px;
-  font-weight: 700;
-}
-input[type="submit"]:nth-child(11) {
-  text-align: center;
-  padding: 0;
-  font-weight: 700;
-  font-size: 14px;
-}
 
-.conteneur-low {
-  margin-top: 2rem;
-  height: 157px;
-  width: 100%;
-  background: #212240;
-  text-align: center;
-}
-.title-website-footer {
-  padding: 0.2rem;
-  color: #f0e448;
-  font-family: "Monoton", sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  padding-bottom: 20px;
-}
-.logo-contact {
-  display: grid;
-  grid-template-columns: 55% 40%;
-  height: 85px;
-}
-.logo {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-#root > div > div.conteneur-low > div > div.logo > a:nth-child(1) > i {
-  color: white;
-  font-size: 40px;
-}
-#root > div > div.conteneur-low > div > div.logo > a:nth-child(2) > i {
-  color: white;
-  font-size: 40px;
-}
-#root > div > div.conteneur-low > div > div.logo > a:nth-child(3) > i {
-  color: white;
-  font-size: 40px;
-}
-.about {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  font-family: "Monofett", monospace;
-  text-align: center;
-  flex-direction: column;
-  font-size: 2.7rem;
-}
-a {
-  color: #ffff;
-}
-.nav-container {
-  background: #212240;
-  flex-direction: column;
-  padding: 20px 25px;
-  gap: 20px;
-  display: flex;
-}
-.input-search {
-  display: flex;
-  justify-content: center;
-}
-.input-search > input {
-  width: 80%;
-  border-radius: 20px;
-  height: 46px;
-  text-align: center;
-  background: #546fe4;
-}
-.input-search > input::placeholder {
-  color: #ffffff;
-}
-.filter-note {
-  display: flex;
-  justify-content: space-around;
-  color: #ffff;
-}
-
-.filter-nav {
-  display: flex;
-  justify-content: space-around;
-  color: #ffff;
-}
-
-.arrow {
-  color: #ffff;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
 @media screen and (min-width: 400px) {
   .carte {
+    width: 15%;
+    height: 15%;
+  }
+  .borderimg {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .carte {
+    height: 80%;
     box-shadow: 1px 1px 20px 8px rgba(0, 0, 0, 0.47);
-    width: 10%;
     margin: 1rem;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 100vh;
+    background-color: black;
+    z-index: -1;
   }
 
   .contener {
+    margin: auto;
+    width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+  }
+}
+@media screen and (min-width: 799px) {
+  .carte {
+    width: 20%;
+    height: 20%;
   }
 }
