@@ -1,5 +1,4 @@
 import { useLoaderData } from "react-router-dom";
-// import CarrouselMenu from "./Carrousel";
 
 function Affiche() {
   const films = useLoaderData();
@@ -9,7 +8,7 @@ function Affiche() {
       <div className="contener">
         {films.map((film) => {
           return (
-            <div className="carte">
+            <div className="carte" key={film.id}>
               <img
                 className="borderimg"
                 src={film.poster_path}
@@ -19,9 +18,6 @@ function Affiche() {
           );
         })}
       </div>
-      {/* <div>
-        <CarrouselMenu films={films} />
-      </div> */}
     </div>
   );
 }

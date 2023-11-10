@@ -9,6 +9,12 @@
   flex-direction: column;
   align-items: center;
 }
+
+.carrouselle-container {
+  padding: 5px;
+  width: 90%;
+  height: 100px;
+}
 .top-container {
   height: 228px;
   width: 100%;
@@ -29,6 +35,18 @@
   text-decoration: underline;
   font-size: 27px;
 }
+.pub {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.pub-img {
+  background-color: #212240;
+  width: 333px;
+  height: 111px;
+}
+
 .carte {
   box-shadow: 1px 1px 20px 8px rgba(0, 0, 0, 0.47);
   display: flex;
