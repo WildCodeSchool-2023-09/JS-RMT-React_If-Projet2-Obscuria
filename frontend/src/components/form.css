@@ -1,0 +1,97 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 466px;
+  margin: auto;
+}
+@media screen and (min-width: 360px) {
+  form > input {
+    width: 285px;
+    height: 38px;
+    border-radius: 20px;
+    background: #ffff;
+    border: none;
+    padding-left: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+  }
+  label {
+    text-align: left;
+    margin-bottom: -5px;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    width: 245px;
+  }
+  textarea {
+    width: 285px;
+    height: 147px;
+    border-radius: 15px;
+    padding: 10px 18px;
+    border: none;
+  }
+  textarea:focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
+  input:focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
+
+  .top-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 70%;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .contact {
+    color: yellow;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  input[type="submit"]:nth-child(11) {
+    text-align: center;
+    padding: 0;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 720px) {
+  form > input {
+    width: 465px;
+  }
+  textarea {
+    width: 465px;
+  }
+  form > input[type="submit"]:nth-child(11) {
+    width: 285px;
+  }
+  label {
+    width: 420px;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-items: start;
+    width: 70%;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
