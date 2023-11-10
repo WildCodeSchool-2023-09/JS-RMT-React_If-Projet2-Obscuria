@@ -1,56 +1,87 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contener {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.top-container {
+  height: 228px;
+  width: 100%;
+  background: #212240;
+  text-align: center;
+  padding-top: 25px;
+}
+.title-website {
+  color: #f0e448;
+  font-family: "Monoton", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+.display-title {
+  font-family: "Impact", sans-serif;
+  color: #ffff;
+  text-decoration: underline;
+  font-size: 27px;
+}
+
+body {
+  background-color: #546fe4;
+  position: relative;
+}
+
+.conteneur-low {
+  margin-top: 2rem;
+  height: 157px;
+  width: 100%;
+  background: #212240;
+  text-align: center;
+}
+.title-website-footer {
+  padding: 0.2rem;
+  color: #f0e448;
+  font-family: "Monoton", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+.logo-contact {
+  display: grid;
+  grid-template-columns: 55% 40%;
+  height: 85px;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#root > div > div.conteneur-low > div > div.logo > a:nth-child(1) > i {
   color: white;
+  font-size: 40px;
 }
-
-.App-link {
-  color: #61dafb;
+#root > div > div.conteneur-low > div > div.logo > a:nth-child(2) > i {
+  color: white;
+  font-size: 40px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#root > div > div.conteneur-low > div > div.logo > a:nth-child(3) > i {
+  color: white;
+  font-size: 40px;
 }
-
-button {
-  font-size: calc(10px + 2vmin);
+.about {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: "Impact", sans-serif;
+  text-align: center;
+  flex-direction: column;
+  font-size: 2.7rem;
+}
+a {
+  color: #ffff;
 }
