@@ -1,11 +1,11 @@
-import Affiche from "./components/Film";
+import AfficheFilm from "./components/AfficheFilm";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="appcontener">
-      <Affiche />
+    <div>
+      <AfficheFilm />
     </div>
   );
 }

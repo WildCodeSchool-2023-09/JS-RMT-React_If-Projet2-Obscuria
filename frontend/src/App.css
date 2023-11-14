@@ -4,20 +4,10 @@
   box-sizing: border-box;
 }
 
-.contener {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.carte {
-  box-shadow: 1px 1px 20px 8px rgba(0, 0, 0, 0.47);
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
-  border-radius: 20px;
 }
 
 body {
@@ -26,6 +16,7 @@ body {
 }
 
 .borderimg {
+  box-shadow: 1px 1px 20px 8px rgba(0, 0, 0, 0.47);
   border-radius: 20px;
 }
 
@@ -37,17 +28,13 @@ body {
 }
 
 @media screen and (min-width: 400px) {
-  .carte {
-    width: 15%;
-    height: 15%;
-  }
   .borderimg {
     width: 100%;
     border-radius: 20px;
   }
-  .carte {
-    height: 80%;
-    box-shadow: 1px 1px 20px 8px rgba(0, 0, 0, 0.47);
+  .card {
+    width: 15%;
+    height: 15%;
     margin: 1rem;
   }
   body::before {
@@ -60,7 +47,7 @@ body {
     z-index: -1;
   }
 
-  .contener {
+  .container {
     margin: auto;
     width: 80%;
     display: flex;
@@ -71,7 +58,7 @@ body {
   }
 }
 @media screen and (min-width: 799px) {
-  .carte {
+  .card {
     width: 20%;
     height: 20%;
   }
