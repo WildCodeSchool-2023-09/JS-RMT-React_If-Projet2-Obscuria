@@ -1,7 +1,7 @@
 import React from "react";
-import "./FilmCard.css";
+import "./MovieCard.css";
 
-function FilmCard({ film }) {
+function MovieCard({ film }) {
   return (
     <div className="card" key={film.id}>
       <img
@@ -14,4 +14,4 @@ function FilmCard({ film }) {
   );
 }
 
-export default FilmCard;
+export default MovieCard;

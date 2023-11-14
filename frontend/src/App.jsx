@@ -1,11 +1,11 @@
-import AfficheFilm from "./components/AfficheFilm";
+import DisplayMovie from "./components/DisplayMovie";
 
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <AfficheFilm />
+      <DisplayMovie />
     </div>
   );
 }
