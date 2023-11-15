@@ -4,15 +4,19 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #546fe4;
+  position: relative;
+}
+
+a {
+  color: #ffff;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-body {
-  background-color: #546fe4;
-  position: relative;
 }
 
 .borderimg {
