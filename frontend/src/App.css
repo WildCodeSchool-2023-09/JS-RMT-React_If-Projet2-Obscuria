@@ -9,6 +9,61 @@ body {
   position: relative;
 }
 
-*/ a {
+a {
   color: #ffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.borderimg {
+  box-shadow: 1px 1px 20px 8px rgba(0, 0, 0, 0.47);
+  border-radius: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 400px) {
+  .borderimg {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .card {
+    width: 15%;
+    height: 15%;
+    margin: 1rem;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 100vh;
+    background-color: black;
+    z-index: -1;
+  }
+
+  .container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 799px) {
+  .card {
+    width: 20%;
+    height: 20%;
+  }
 }
