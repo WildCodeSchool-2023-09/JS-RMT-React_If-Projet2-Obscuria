@@ -1,27 +1,16 @@
 import "./App.css";
-import Title from "./components/Title";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Button from "./components/Button";
 
 function App() {
   return (
     <div>
-      <Title />
+      <Header />
+      <Button />
       <Footer />
     </div>
   );
 }
 
 export default App;
-
-// import "./App.css";
-// import Home from "./pages/Home";
-
-// function App() {
-//   return (
-//     <div>
-//       <Home />
-//     </div>
-//   );
-// }
-
-// export default App;
