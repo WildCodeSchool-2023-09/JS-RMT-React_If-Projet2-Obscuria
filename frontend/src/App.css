@@ -1,56 +1,161 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contener {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.carte {
+  box-shadow: 1px 1px 20px 8px rgba(0, 0, 0, 0.47);
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  border-radius: 20px;
+}
+
+body {
+  background-color: #546fe4;
+  position: relative;
+}
+
+.borderimg {
+  border-radius: 20px;
+}
+
+.form-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 400px) {
+  .carte {
+    width: 15%;
+    height: 15%;
+    margin: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+  .borderimg {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .carte {
+    height: 80%;
+    box-shadow: 1px 1px 20px 8px rgba(0, 0, 0, 0.47);
+    margin: 1rem;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 100vh;
+    background-color: black;
+    z-index: -1;
+  }
+
+  .contener {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menuCarousel {
+    position: relative;
+    justify-content: center;
+    left: 16.5%;
+  }
+
+  .text_right_slide {
+    color: #ffed00;
+    background: black;
+    float: right;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50.5%, -50%);
+    padding: 10px;
+    width: 40%;
+    height: 100%;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images_left_slide {
+    width: 30%;
+    max-width: 100%;
+    left: 20%;
+    top: 50%;
+  }
+
+  button {
+    margin: 10px;
+    background-color: #ffed00;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 10px;
   }
 }
+@media screen and (min-width: 799px) {
+  .carte {
+    width: 20%;
+    height: 20%;
+  }
 
-button {
-  font-size: calc(10px + 2vmin);
+  .menuCarousel {
+    position: relative;
+    justify-content: center;
+    left: 16.5%;
+  }
+
+  .text_right_slide {
+    color: #ffed00;
+    background: black;
+    float: right;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50.5%, -50%);
+    padding: 10px;
+    width: 40%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images_left_slide {
+    width: 30%;
+    max-width: 100%;
+    left: 20%;
+    top: 50%;
+  }
+
+  button {
+    margin: 15px;
+    background-color: #ffed00;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
 }

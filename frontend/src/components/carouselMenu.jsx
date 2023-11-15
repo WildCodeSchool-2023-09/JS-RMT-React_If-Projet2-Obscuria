@@ -18,7 +18,6 @@ function CarouselMenu() {
         console.error("Erreur lors de la récupération des données", error);
       });
   }, []);
-  console.log(films);
 
   const carouselSettings = {
     dots: true,
@@ -27,23 +26,33 @@ function CarouselMenu() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    arrows: false,
   };
 
   return (
     <div>
-      <h2>Menu</h2>
       <Slider
         dots={carouselSettings.dots}
         infinite={carouselSettings.infinite}
         speed={carouselSettings.speed}
         slidesToShow={carouselSettings.slidesToShow}
         slidesToScroll={carouselSettings.slidesToScroll}
+        autoplay={carouselSettings.autoplay}
+        arrows={carouselSettings.arrows}
+        arrowSize={carouselSettings.arrowSize}
       >
         {films.map((film) => (
           <div key={film.id} className="menuCarousel">
-            <img src={film.poster_path} alt={film.original_title} />
-            <p className="filmName">{film.original_title}</p>
-            <p className="synopsis">{film.overview}</p>
+            <img
+              className="images_left_slide"
+              src={film.poster_path}
+              alt={film.original_title}
+            />
+            <div className="text_right_slide">
+              <p>{film.original_title}</p>
+              <p>{film.overview}</p>
+              <button type="button">Réservez votre billet !</button>
+            </div>
           </div>
         ))}
       </Slider>
