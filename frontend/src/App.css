@@ -31,7 +31,7 @@ a {
   flex-direction: column;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 450px) {
   .borderimg {
     width: 100%;
     border-radius: 20px;
