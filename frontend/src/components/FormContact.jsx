@@ -1,8 +1,11 @@
 import { useState } from "react";
 import "./form.css";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import FormComponents from "./FormComponents";
 
-function FormContact() {
+export default function FormContact() {
   const {
     VITE_EMAILJS_SERVICE_ID,
     VITE_EMAILJS_TEMPLATE_ID,
@@ -21,6 +24,17 @@ function FormContact() {
   const emailjsTemplateId = VITE_EMAILJS_TEMPLATE_ID;
   const emailjsPublicKey = VITE_EMAILJS_PUBLIC_KEY;
 
+  const showToastMessage = () => {
+    toast.success("Success Notification !", {
+      position: toast.POSITION.TOP_RIGHT,
+    });
+  };
+  const showToastMessageError = () => {
+    toast.error("Erreur !", {
+      position: toast.POSITION.TOP_RIGHT,
+    });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -28,15 +42,16 @@ function FormContact() {
 
       .then(
         (result) => {
-          console.info(result.text);
+          showToastMessage(result);
         },
         (error) => {
-          console.info(error.text);
+          showToastMessageError(error);
         }
       );
   };
 
-  const handleChange = ({ target: { name, value } }) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
     setFormValue((prevData) => ({
       ...prevData,
       [name]: value,
@@ -44,61 +59,54 @@ function FormContact() {
   };
 
   return (
-    <div className="form-container">
+    <div className="form-contact-container">
       <div className="top-form-container">
-        <p>Si vous avez une question :</p>
+        <p className="form-contact-top-p">Si vous avez une question :</p>
         <h3 className="contact">Contactez-Nous</h3>
       </div>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Nom :</label>
-        <input
-          type="text"
+      <form className="form-contact" onSubmit={handleSubmit}>
+        <FormComponents
+          label="nom :"
           name="name"
+          type="text"
           onChange={handleChange}
           value={formValue.name}
-          id="name"
-          required
         />
-        <label htmlFor="surname">Prénom :</label>
-        <input
-          type="text"
+        <FormComponents
+          label="prénom :"
           name="surname"
+          type="text"
           onChange={handleChange}
           value={formValue.surname}
-          id="surname"
-          required
         />
-        <label htmlFor="email">Email :</label>
-        <input
-          type="email"
+        <FormComponents
+          label="email :"
           name="email"
+          type="text"
           onChange={handleChange}
           value={formValue.email}
-          id="email"
-          pattern="^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$"
-          required
         />
-        <label htmlFor="number">Numéro (facultatif) :</label>
-        <input
+        <FormComponents
+          label="numéro :"
           name="number"
           type="text"
           onChange={handleChange}
           value={formValue.number}
-          id="number"
-          maxLength={10}
         />
-        <label htmlFor="description">Description :</label>
-        <textarea
-          name="message"
-          onChange={handleChange}
-          id="description"
-          maxLength={250}
-          required
-        />
-        <input type="submit" value="Envoyer" />
+        <label>
+          <span className="label-text-form-contact">message :</span>
+          <textarea
+            className="textarea-form-contact"
+            name="message"
+            onChange={handleChange}
+            maxLength={250}
+            value={formValue.message}
+            required
+          />
+        </label>
+        <input className="form-contact-submit" type="submit" value="Envoyer" />
       </form>
+      <ToastContainer />
     </div>
   );
 }
-
-export default FormContact;
