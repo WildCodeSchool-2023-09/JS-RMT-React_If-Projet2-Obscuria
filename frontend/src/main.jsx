@@ -1,14 +1,30 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import axios from "axios";
 import App from "./App";
+import CarouselMenu from "./components/carouselMenu";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    loader: () => {
+      return axios
+        .get(`${import.meta.env.VITE_BACKEND_URL}/api/film`)
+        .then((res) => res.data)
+        .catch((err) => console.error(err));
+    },
+  },
+  {
+    path: "/film/limit",
+    element: <CarouselMenu />,
+    loader: () => {
+      return axios
+        .get(`${import.meta.env.VITE_BACKEND_URL}/api/film/limit`)
+        .then((res) => res.data)
+        .catch((err) => console.error(err));
+    },
   },
 ]);
 
