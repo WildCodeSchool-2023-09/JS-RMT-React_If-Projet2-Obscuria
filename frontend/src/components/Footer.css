@@ -1,26 +1,26 @@
 .container-low {
   margin-top: 2rem;
-  width: 70%;
-  background: #212240;
+  width: 90%;
+  background: #546fe4;
   margin: auto;
   text-align: center;
 }
-.footer-container {
-  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-}
-
 .title-website-footer {
   padding-top: 1rem;
-  color: #f0e448;
   font-family: "Monoton", sans-serif;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 300;
+  font-weight: 500;
+  color: #ffff;
 }
 
 .logo-contact {
   display: grid;
   grid-template-columns: 58% 42%;
   align-items: center;
+  padding-bottom: 35px;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 .logo {
@@ -28,8 +28,13 @@
   align-items: center;
   gap: 20px;
   padding-left: 30px;
+  height: 100%;
 }
-
+.logo > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #root > div > div.container-low > div > div.logo > a:nth-child(1) > i {
   color: white;
   font-size: 40px;
@@ -47,12 +52,11 @@
   justify-content: center;
   align-content: center;
   font-family: "Monofett", monospace;
-  color: #ffff;
+  color: #ffffff;
   text-align: center;
   flex-direction: column;
   font-size: 2rem;
   font-weight: 100;
-  padding-bottom: 2px;
   margin-left: 15%;
 }
 .logo > a {

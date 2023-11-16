@@ -17,7 +17,6 @@ body::before {
   position: absolute;
   left: 15%;
   width: 70%;
-  height: 100%;
   background-color: black;
   z-index: -1;
 }
@@ -39,7 +38,7 @@ body::before {
   flex-direction: column;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 330px) {
   .borderimg {
     width: 100%;
     border-radius: 20px;
