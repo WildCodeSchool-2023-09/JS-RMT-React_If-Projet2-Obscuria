@@ -8,8 +8,8 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <CarouselMenu />
       <Header />
+      <CarouselMenu />
       <DisplayMovie />
       <FormContact />
       <Footer />
