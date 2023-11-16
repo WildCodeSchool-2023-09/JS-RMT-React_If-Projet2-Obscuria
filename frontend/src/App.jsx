@@ -1,13 +1,18 @@
-import Affiche from "./components/Film";
 import CarouselMenu from "./components/carouselMenu";
-
+import DisplayMovie from "./components/DisplayMovie";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import FormContact from "./components/FormContact";
 import "./App.css";
 
 function App() {
   return (
-    <div className="appcontener">
+    <div>
       <CarouselMenu />
-      <Affiche />
+      <Header />
+      <DisplayMovie />
+      <FormContact />
+      <Footer />
     </div>
   );
 }
