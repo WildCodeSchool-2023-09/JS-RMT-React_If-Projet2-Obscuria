@@ -10,7 +10,7 @@
 }
 
 .title-website-footer {
-  padding: 0.2rem;
+  padding-top: 1rem;
   color: #f0e448;
   font-family: "Monoton", sans-serif;
   font-size: 30px;
@@ -72,5 +72,18 @@
   }
   .about {
     font-size: 3rem;
+    margin-left: 20%;
+  }
+}
+@media (max-width: 450px) {
+  .logo {
+    gap: 10px;
+    padding-left: 5px;
+  }
+  .logo-contact {
+    padding-left: 5px;
+  }
+  .about {
+    margin-left: 0;
   }
 }
