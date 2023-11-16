@@ -10,7 +10,7 @@ function CarouselMenu() {
 
   useEffect(() => {
     axios
-      .get(`${import.meta.env.VITE_BACKEND_URL}/api/film/limit`)
+      .get(`${import.meta.env.VITE_BACKEND_URL}/api/films?limit=3`)
       .then((response) => {
         setFilms(response.data);
       })

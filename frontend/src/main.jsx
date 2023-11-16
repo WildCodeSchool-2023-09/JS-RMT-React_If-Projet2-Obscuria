@@ -11,7 +11,7 @@ const router = createBrowserRouter([
     element: <App />,
     loader: () => {
       return axios
-        .get(`${import.meta.env.VITE_BACKEND_URL}/api/film`)
+        .get(`${import.meta.env.VITE_BACKEND_URL}/api/films?limit=8`)
         .then((res) => res.data)
         .catch((err) => console.error(err));
     },
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     element: <CarouselMenu />,
     loader: () => {
       return axios
-        .get(`${import.meta.env.VITE_BACKEND_URL}/api/film/limit`)
+        .get(`${import.meta.env.VITE_BACKEND_URL}/api/films?limit=3`)
         .then((res) => res.data)
         .catch((err) => console.error(err));
     },
