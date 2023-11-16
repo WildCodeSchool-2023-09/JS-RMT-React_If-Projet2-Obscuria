@@ -6,13 +6,13 @@
 
 .top-container {
   height: 228px;
-  width: 90%;
+  width: 70%;
   background: #212240;
   text-align: center;
-  padding-top: 25px;
+  padding: 25px;
   margin: auto;
-  border-radius: 20px 20px 0 0;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 56%, 0 75%);
+  margin-bottom: 25px;
 }
 
 .title-website {
@@ -32,7 +32,7 @@
 
 @media (max-width: 600px) {
   .top-container {
-    width: 90%;
+    width: 70%;
   }
   .title-website {
     font-size: 40px;

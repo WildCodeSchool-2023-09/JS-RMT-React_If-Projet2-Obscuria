@@ -5,6 +5,9 @@
   flex-direction: column;
   max-width: 466px;
   margin: auto;
+  color: #ffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 330px) {
@@ -13,7 +16,6 @@
     flex-direction: column;
     align-items: center;
     width: 70%;
-    margin-bottom: -15px;
     font-size: 13px;
     font-weight: bold;
   }
@@ -23,6 +25,7 @@
     padding-right: 20px;
     width: 230px;
     font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
   }
   .form-contact {
     display: flex;
@@ -36,9 +39,10 @@
 
   .label-text-form-contact {
     padding: 5px 12px;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 300;
     color: #ffff;
+    font-family: "Montserrat", sans-serif;
   }
   .textarea-form-contact {
     width: 225px;
@@ -72,6 +76,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-top: 0;
+    font-family: "Montserrat", sans-serif;
   }
 
   .form-contact > label > input:focus {
@@ -86,9 +91,9 @@
     border: none;
     font-weight: 700;
     font-size: 12px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     width: 205px;
     margin: auto;
+    font-family: "Montserrat", sans-serif;
   }
   .form-contact-submit:focus {
     outline: none;

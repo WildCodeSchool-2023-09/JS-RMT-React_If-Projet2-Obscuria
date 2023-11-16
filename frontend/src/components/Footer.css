@@ -1,11 +1,12 @@
 .container-low {
   margin-top: 2rem;
-  height: 175px;
-  width: 90%;
+  width: 70%;
   background: #212240;
   margin: auto;
-  border-radius: 20px;
   text-align: center;
+}
+.footer-container {
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .title-website-footer {
@@ -14,19 +15,19 @@
   font-family: "Monoton", sans-serif;
   font-size: 30px;
   font-weight: 300;
-  padding-bottom: 20px;
 }
 
 .logo-contact {
   display: grid;
-  grid-template-columns: 55% 40%;
-  height: 85px;
+  grid-template-columns: 58% 42%;
+  align-items: center;
 }
 
 .logo {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  gap: 20px;
+  padding-left: 30px;
 }
 
 #root > div > div.container-low > div > div.logo > a:nth-child(1) > i {
@@ -45,25 +46,31 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Monofett", monospace;
   color: #ffff;
   text-align: center;
   flex-direction: column;
-  font-size: 2.7rem;
+  font-size: 2rem;
+  font-weight: 100;
+  padding-bottom: 2px;
+  margin-left: 15%;
 }
 .logo > a {
   color: #ffff;
   font-size: 35px;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .top-container {
-    width: 90%;
+    width: 70%;
   }
   .title-website {
     font-size: 40px;
   }
   .display-title {
     font-size: 20px;
+  }
+  .about {
+    font-size: 3rem;
   }
 }
