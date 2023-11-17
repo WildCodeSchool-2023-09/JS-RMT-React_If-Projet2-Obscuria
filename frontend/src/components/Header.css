@@ -6,21 +6,21 @@
 
 .top-container {
   height: 228px;
-  width: 90%;
-  background: #212240;
+  width: 70%;
   text-align: center;
-  padding-top: 25px;
+  padding: 25px;
   margin: auto;
-  border-radius: 20px 20px 0 0;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 63%, 0 75%);
+  margin-bottom: 25px;
 }
 
 .title-website {
-  color: #f0e448;
+  color: #ffee00;
   font-family: "Monoton", sans-serif;
   font-size: 60px;
   font-weight: 300;
   padding-bottom: 20px;
+  font-weight: 500;
 }
 
 .display-title {
@@ -32,7 +32,7 @@
 
 @media (max-width: 600px) {
   .top-container {
-    width: 90%;
+    width: 70%;
   }
   .title-website {
     font-size: 40px;
