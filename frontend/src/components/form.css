@@ -1,0 +1,107 @@
+.form-contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 466px;
+  margin: auto;
+  color: #ffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (min-width: 330px) {
+  .top-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .form-contact-top-p {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 20px;
+    width: 230px;
+    font-size: 0.9rem;
+  }
+  .form-contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-contact > label {
+    flex-direction: column;
+    display: flex;
+    padding: 10px 15px;
+  }
+
+  .label-text-form-contact {
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffff;
+  }
+  .textarea-form-contact {
+    width: 225px;
+    border-radius: 20px;
+    height: 147px;
+    padding: 12px;
+    font-weight: 500;
+  }
+  .textarea-form-contact:focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
+
+  .form-contact > textarea {
+    width: 285px;
+    height: 147px;
+    border-radius: 15px;
+    padding: 10px 18px;
+    border: none;
+  }
+  .form-contact > label > input {
+    border-radius: 15px;
+    border: none;
+    height: 32px;
+    padding-left: 12px;
+  }
+
+  .contact {
+    color: yellow;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0;
+  }
+
+  .form-contact > label > input:focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
+
+  .form-contact-submit {
+    height: 40px;
+    background: #ffff;
+    border-radius: 20px;
+    border: none;
+    font-weight: 700;
+    font-size: 12px;
+    width: 205px;
+    margin: auto;
+    font-family: "Montserrat", sans-serif;
+  }
+  .form-contact-submit:focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
+}
+@media screen and (min-width: 720px) {
+  .form-contact > label > input {
+    width: 271px;
+  }
+  .textarea-form-contact {
+    width: 271px;
+  }
+}
