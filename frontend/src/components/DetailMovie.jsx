@@ -1,29 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
-import axios from "axios";
+import { Link, useLoaderData } from "react-router-dom";
 import "./MovieCard.css";
 import "./DetailMovie.css";
 
 function DetailMovie() {
-  const { id } = useParams();
-  const [movie, setMovie] = useState(null);
-
-  useEffect(() => {
-    axios
-      .get(`${import.meta.env.VITE_BACKEND_URL}/api/Films/${id}`)
-      .then((response) => {
-        setMovie(response.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, [id]);
-
-  if (!movie) {
-    return null;
-  }
+  const movie = useLoaderData();
   return (
-    <Link to="/">
+    <Link className="link" to="/">
       <figure className="cardDetailContainer">
         <div className="cartDetailTitel">
           <div className="cardDetailTitlelft">

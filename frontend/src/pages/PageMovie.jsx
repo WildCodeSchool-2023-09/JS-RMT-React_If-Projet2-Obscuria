@@ -1,5 +1,4 @@
 import React from "react";
-
 import DetailMovie from "../components/DetailMovie";
 
 function PageMovie() {
