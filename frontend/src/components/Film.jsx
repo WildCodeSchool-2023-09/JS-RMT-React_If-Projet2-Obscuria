@@ -4,10 +4,10 @@ function Affiche() {
   const films = useLoaderData();
 
   return (
-    <div className="contener">
+    <div className="container">
       {films.map((film) => {
         return (
-          <div className="carte" key={film.id}>
+          <div className="card" key={film.id}>
             <img
               className="borderimg"
               src={film.poster_path}
