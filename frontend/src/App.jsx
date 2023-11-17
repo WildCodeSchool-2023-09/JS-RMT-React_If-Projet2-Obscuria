@@ -1,5 +1,4 @@
 import DisplayMovie from "./components/DisplayMovie";
-
 import "./App.css";
 
 function App() {
