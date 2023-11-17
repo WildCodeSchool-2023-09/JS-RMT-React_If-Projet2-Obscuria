@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 body {
@@ -69,6 +70,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+   
   }
 }
 @media screen and (min-width: 799px) {

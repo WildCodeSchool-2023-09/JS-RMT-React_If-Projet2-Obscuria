@@ -1,3 +1,4 @@
+import CarouselMenu from "./components/carouselMenu";
 import DisplayMovie from "./components/DisplayMovie";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -8,6 +9,7 @@ function App() {
   return (
     <div>
       <Header />
+      <CarouselMenu />
       <DisplayMovie />
       <FormContact />
       <Footer />

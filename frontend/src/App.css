@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #546fe4;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.border-img {
+  box-shadow: 1px 1px 20px 8px rgba(0, 0, 0, 0.47);
+  border-radius: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+@media screen and (min-width: 400px) {
+  
+  .container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-carousel {
+    position: relative;
+    justify-content: center;
+    left: 15%;
+    margin-bottom: 50px;
+  }
+
+  .text-right-slide {
+    color: #ffed00;
+    background: black;
+    float: right;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50.5%, -50%);
+    padding: 10px;
+    width: 40%;
+    height: 100%;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images-left-slide {
+    width: 30%;
+    max-width: 100%;
+    left: 20%;
+    top: 50%;
+  }
+
+  .button-ticket {
+    margin: 10px;
+    background-color: #ffed00;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 10px;
+    color: black;
+  }
+
+  .border-img {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 799px) {
+  .card {
+    width: 20%;
+    height: 20%;
+  }
+
+  .menu-carousel {
+    position: relative;
+    justify-content: center;
+    left: 15%;
+    margin-bottom: 50px;
+  }
+
+  .text-right-slide {
+    color: #ffed00;
+    background: black;
+    float: right;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50.5%, -50%);
+    padding: 10px;
+    width: 40%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images-left-slide {
+    width: 30%;
+    max-width: 100%;
+    left: 20%;
+    top: 50%;
+  }
+
+  .button-ticket {
+    margin: 15px;
+    background-color: #ffed00;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
+}

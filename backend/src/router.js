@@ -8,26 +8,17 @@ const client = require("../database/client");
 // Define Your API Routes Here
 /* ************************************************************************* */
 
-// Route to get a list of items
-
-// router.get("/films", (req, res) => {
-//   client
-//     .query("select * from film LIMIT 8 ")
-//     .then((result) => res.status(200).json(result[0]))
-//     .catch((error) => {
-//       console.error(error);
-//       res.sendStatus(500);
-//     });
-// });
-
 router.get("/films", (req, res) => {
   let query = "SELECT * FROM film";
   const values = [];
-  if (req.query.release_date) {
+  if (req.query.releaseDate) {
     query += " where release_date = ?";
-    values.push(req.query.release_date);
+    values.push(req.query.releaseDate);
   }
-  query += " LIMIT 8";
+  if (req.query.limit) {
+    query += " LIMIT ?";
+    values.push(parseInt(req.query.limit, 10));
+  }
 
   client
     .query(query, values)
@@ -56,7 +47,5 @@ router.get("/films/:id", (req, res) => {
       res.sendStatus(500);
     });
 });
-
-/* ************************************************************************* */
 
 module.exports = router;
