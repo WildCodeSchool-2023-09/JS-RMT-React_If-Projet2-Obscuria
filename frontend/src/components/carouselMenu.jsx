@@ -42,16 +42,18 @@ function CarouselMenu() {
         arrowSize={carouselSettings.arrowSize}
       >
         {films.map((film) => (
-          <div key={film.id} className="menuCarousel">
+          <div key={film.id} className="menu-carousel">
             <img
-              className="images_left_slide"
+              className="images-left-slide"
               src={film.poster_path}
               alt={film.original_title}
             />
-            <div className="text_right_slide">
+            <div className="text-right-slide">
               <p>{film.original_title}</p>
               <p>{film.overview}</p>
-              <button type="button">Réservez votre billet !</button>
+              <button type="button" className="button-ticket">
+                Réservez votre billet !
+              </button>
             </div>
           </div>
         ))}
