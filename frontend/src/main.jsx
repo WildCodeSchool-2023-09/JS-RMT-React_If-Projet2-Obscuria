@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import axios from "axios";
 import App from "./App";
+import PageMovie from "./pages/PageMovie";
 
 const router = createBrowserRouter([
   {
@@ -11,6 +12,17 @@ const router = createBrowserRouter([
     loader: () => {
       return axios
         .get(`${import.meta.env.VITE_BACKEND_URL}/api/films?limit=8`)
+        .then((res) => res.data)
+        .catch((err) => console.error(err));
+    },
+  },
+
+  {
+    path: "/films/:id",
+    element: <PageMovie />,
+    loader: ({ params }) => {
+      return axios
+        .get(`${import.meta.env.VITE_BACKEND_URL}/api/films/${params.id}`)
         .then((res) => res.data)
         .catch((err) => console.error(err));
     },

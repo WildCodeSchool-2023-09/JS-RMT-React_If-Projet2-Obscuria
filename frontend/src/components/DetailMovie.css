@@ -1,0 +1,141 @@
+.bigContainer {
+  display: flex;
+  justify-content: center;
+}
+.link {
+  text-decoration: none;
+}
+
+.containerHour {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+}
+.buttonreturn {
+  display: flex;
+  justify-content: flex-end;
+}
+.buttonBack {
+  margin: right 800px;
+}
+.cardDetailContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  justify-content: center;
+  box-shadow: -1px -1px 13px 3px rgb(247, 244, 244);
+  border-radius: 20px;
+  padding: 0px 5px;
+  margin-top: 5rem;
+  margin: auto;
+}
+
+.cardDetailcontainerimg {
+  padding: 0px 10px;
+}
+
+.containerHourRight {
+  height: 260px;
+}
+
+.CardDetailLanguage {
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 6px 20px;
+}
+.cardDetailvote {
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 6px 20px;
+}
+.cardDetailAbout {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  margin-top: 30px;
+}
+.containerHour {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firsthour {
+  display: flex;
+  justify-content: space-around;
+}
+.secondHour {
+  display: flex;
+  justify-content: space-around;
+}
+
+.thirdHour {
+  display: flex;
+  justify-content: space-around;
+}
+.cardDetailhour {
+  width: 100%;
+  padding: 6px 20px;
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin: 10px 5px;
+}
+
+.cartDetailTitel {
+  display: flex;
+  width: 75%;
+  background: white;
+  padding: 5px;
+  border-radius: 20px;
+  height: 41px;
+  margin: 10px 15px;
+  align-items: center;
+  justify-content: center;
+}
+.cardDetailTitlelft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cardDetailDayContainer {
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0px 5px;
+  padding: 6px 20px;
+}
+
+.cardDetailImg {
+  height: 260px;
+  border-radius: 20px;
+}
+
+.cardDetailover {
+  text-align: center;
+  margin-bottom: 10px;
+  margin: 10px 5px;
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 6px 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .cardDetailContainer {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: center;
+    box-shadow: -1px -1px 13px 3px rgb(247, 244, 244);
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-top: 5rem;
+  }
+}

@@ -9,17 +9,6 @@ body {
   position: relative;
 }
 
-a {
-  color: #ffff;
-}
-body::before {
-  content: "";
-  position: absolute;
-  left: 15%;
-  width: 70%;
-  background-color: black;
-  z-index: -1;
-}
 .container {
   display: flex;
   flex-direction: column;
@@ -38,29 +27,9 @@ body::before {
   flex-direction: column;
 }
 
+
 @media screen and (min-width: 400px) {
-  .card {
-    width: 15%;
-    height: 15%;
-    margin: 1rem;
-    box-shadow: 1px 1px 20px 8px rgba(0, 0, 0, 0.47);
-    margin: 1rem;
-  }
-  .borderimg {
-    width: 100%;
-    border-radius: 20px;
-  }
-
-  body::before {
-    content: "";
-    position: absolute;
-    left: 20%;
-    width: 60%;
-    height: 100vh;
-    background-color: black;
-    z-index: -1;
-  }
-
+  
   .container {
     margin: auto;
     width: 80%;
@@ -74,7 +43,8 @@ body::before {
   .menu-carousel {
     position: relative;
     justify-content: center;
-    left: 16.5%;
+    left: 15%;
+    margin-bottom: 50px;
   }
 
   .text-right-slide {
@@ -118,16 +88,6 @@ body::before {
     border-radius: 20px;
   }
 
-  body::before {
-    content: "";
-    position: absolute;
-    left: 15%;
-    width: 70%;
-    height: 100%;
-    background-color: black;
-    z-index: -1;
-  }
-
   .container {
     margin: auto;
     width: 80%;
@@ -148,7 +108,8 @@ body::before {
   .menu-carousel {
     position: relative;
     justify-content: center;
-    left: 16.5%;
+    left: 15%;
+    margin-bottom: 50px;
   }
 
   .text-right-slide {
@@ -185,13 +146,4 @@ body::before {
     padding: 10px;
     font-size: 15px;
   }
-}
-body::before {
-  content: "";
-  position: absolute;
-  left: 15%;
-  width: 70%;
-  height: 100%;
-  background-color: black;
-  z-index: -1;
 }
