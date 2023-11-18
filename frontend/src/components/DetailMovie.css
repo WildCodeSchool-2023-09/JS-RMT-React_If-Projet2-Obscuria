@@ -1,0 +1,137 @@
+.bigContainer {
+  margin: auto;
+  width: 70%;
+  height: 100vh;
+  background: black;
+}
+.link {
+  text-decoration: none;
+}
+
+.containerHour {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  color: black;
+}
+.buttonreturn {
+  display: flex;
+  justify-content: flex-end;
+}
+.buttonBack {
+  margin: right 800px;
+}
+.cardDetailContainer {
+  margin: auto;
+  justify-content: center;
+  padding: 35px 5px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  background: #546fe4;
+}
+
+.cardDetailcontainerimg {
+  padding: 0px 10px;
+}
+
+.CardDetailLanguage {
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 6px 20px;
+}
+.cardDetailvote {
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 6px 20px;
+}
+.cardDetailAbout {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  margin-top: 30px;
+}
+.containerHour {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firsthour {
+  display: flex;
+  justify-content: space-around;
+}
+.secondHour {
+  display: flex;
+  justify-content: space-around;
+}
+
+.thirdHour {
+  display: flex;
+  justify-content: space-around;
+}
+.cardDetailhour {
+  width: 100%;
+  padding: 6px 20px;
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin: 10px 5px;
+}
+
+.cartDetailTitel {
+  display: flex;
+  background: white;
+  padding: 5px;
+  border-radius: 20px;
+  height: 41px;
+  margin: 35px 45px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.cardDetailTitlelft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cardDetailDayContainer {
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0px 5px;
+  padding: 6px 20px;
+}
+
+.cardDetailImg {
+  height: 300px;
+  border-radius: 20px;
+}
+
+.cardDetailover {
+  text-align: center;
+  margin-bottom: 10px;
+  margin: 40px 0px;
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 6px 25px;
+  color: black;
+  max-width: 885px;
+}
+
+@media screen and (min-width: 900px) {
+  .cardDetailContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 15px;
+    margin-top: 5rem;
+  }
+}
