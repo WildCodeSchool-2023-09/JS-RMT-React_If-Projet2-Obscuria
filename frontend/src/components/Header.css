@@ -5,13 +5,10 @@
 }
 
 .top-container {
-  height: 228px;
-  width: 70%;
+  height: 180px;
   text-align: center;
-  padding: 25px;
+  padding-top: 25px;
   margin: auto;
-  clip-path: polygon(0 0, 100% 0, 100% 63%, 0 75%);
-  margin-bottom: 25px;
 }
 
 .title-website {
@@ -31,9 +28,6 @@
 }
 
 @media (max-width: 600px) {
-  .top-container {
-    width: 70%;
-  }
   .title-website {
     font-size: 40px;
   }

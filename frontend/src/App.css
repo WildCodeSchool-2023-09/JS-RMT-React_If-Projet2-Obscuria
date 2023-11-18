@@ -24,6 +24,7 @@ body::before {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 25px;
 }
 
 .border-img {
@@ -40,8 +41,8 @@ body::before {
 
 @media screen and (min-width: 400px) {
   .card {
-    width: 15%;
-    height: 15%;
+    width: 33%;
+    height: 25%;
     margin: 1rem;
     box-shadow: 1px 1px 20px 8px rgba(0, 0, 0, 0.47);
     margin: 1rem;
@@ -50,7 +51,6 @@ body::before {
     width: 100%;
     border-radius: 20px;
   }
-
   body::before {
     content: "";
     position: absolute;
@@ -61,24 +61,14 @@ body::before {
     z-index: -1;
   }
 
-  .container {
-    margin: auto;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .menu-carousel {
     position: relative;
     justify-content: center;
-    left: 16.5%;
+    left: 15%;
   }
 
   .text-right-slide {
-    color: #ffed00;
+    color: #ffffff;
     background: black;
     float: right;
     text-align: center;
@@ -97,20 +87,33 @@ body::before {
   }
 
   .images-left-slide {
-    width: 30%;
+    width: 32%;
     max-width: 100%;
-    left: 20%;
-    top: 50%;
+    padding: 35px 15px;
+  }
+  .film-original-title {
+    width: 70%;
+    background: #ffff;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-family: "Montserrat Alternates", sans-serif;
+    padding: 5px;
   }
 
   .button-ticket {
-    margin: 10px;
-    background-color: #ffed00;
+    margin: 5px;
+    background-color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 10px;
-    font-size: 10px;
+    font-size: 0.8rem;
     color: black;
+    width: auto;
+    font-family: "Montserrat Alternates", sans-serif;
   }
 
   .border-img {
@@ -127,7 +130,27 @@ body::before {
     background-color: black;
     z-index: -1;
   }
+}
 
+.film-description {
+  padding: 15px 7px;
+  background: #ffffff;
+  border-radius: 20px;
+  color: black;
+  width: 70%;
+  margin-top: 7px;
+  height: 70%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+@media screen and (min-width: 600px) {
+  .film-description {
+    font-size: 0.6rem;
+    display: flex;
+  }
   .container {
     margin: auto;
     width: 80%;
@@ -136,23 +159,33 @@ body::before {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-top: 15%;
   }
 }
-
 @media screen and (min-width: 799px) {
   .card {
-    width: 20%;
-    height: 20%;
+    width: 25%;
+    height: 25%;
+  }
+  .images-left-slide {
+    max-width: 50%;
+    height: 400px;
+  }
+  .film-description {
+    font-size: 0.8rem;
   }
 
   .menu-carousel {
     position: relative;
     justify-content: center;
-    left: 16.5%;
+    left: 15%;
   }
-
+  .slider-container {
+    max-height: 300px;
+    width: 100%;
+  }
   .text-right-slide {
-    color: #ffed00;
+    color: #f7f7f4;
     background: black;
     float: right;
     text-align: center;
@@ -161,8 +194,8 @@ body::before {
     left: 50%;
     transform: translate(-50.5%, -50%);
     padding: 10px;
-    width: 40%;
-    height: 100%;
+    /* width: 40%;
+    height: 100%; */
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -174,16 +207,7 @@ body::before {
     width: 30%;
     max-width: 100%;
     left: 20%;
-    top: 50%;
-  }
-
-  .button-ticket {
-    margin: 15px;
-    background-color: #ffed00;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 15px;
+    top: 45%;
   }
 }
 body::before {
@@ -194,4 +218,14 @@ body::before {
   height: 100%;
   background-color: black;
   z-index: -1;
+}
+@media screen and (min-width: 1100px) {
+  .film-description {
+    font-size: 1rem;
+  }
+  .images-left-slide {
+    height: 300px;
+    width: 25%;
+    margin-left: 50px;
+  }
 }

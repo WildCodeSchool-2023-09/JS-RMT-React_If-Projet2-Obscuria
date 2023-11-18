@@ -30,7 +30,7 @@ function CarouselMenu() {
   };
 
   return (
-    <div>
+    <div className="slider-container">
       <Slider
         dots={carouselSettings.dots}
         infinite={carouselSettings.infinite}
@@ -49,8 +49,8 @@ function CarouselMenu() {
               alt={film.original_title}
             />
             <div className="text-right-slide">
-              <p>{film.original_title}</p>
-              <p>{film.overview}</p>
+              <p className="film-original-title">{film.original_title}</p>
+              <p className="film-description">{film.overview}</p>
               <button type="button" className="button-ticket">
                 Réservez votre billet !
               </button>
