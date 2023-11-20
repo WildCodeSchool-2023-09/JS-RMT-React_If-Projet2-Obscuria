@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./MovieCard.css";
+import { Link } from "react-router-dom";
 
 function MovieCard({ film }) {
   return (
