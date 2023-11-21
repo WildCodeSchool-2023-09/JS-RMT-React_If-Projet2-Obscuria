@@ -1,6 +1,8 @@
 .bigContainer {
-  display: flex;
-  justify-content: center;
+  margin: auto;
+  width: 70%;
+  height: 100vh;
+  background: black;
 }
 .link {
   text-decoration: none;
@@ -10,6 +12,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   width: 100%;
+  color: black;
 }
 .buttonreturn {
   display: flex;
@@ -19,24 +22,17 @@
   margin: right 800px;
 }
 .cardDetailContainer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 350px;
-  justify-content: center;
-  box-shadow: -1px -1px 13px 3px rgb(247, 244, 244);
-  border-radius: 20px;
-  padding: 0px 5px;
-  margin-top: 5rem;
   margin: auto;
+  justify-content: center;
+  padding: 35px 5px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  background: #546fe4;
 }
 
 .cardDetailcontainerimg {
   padding: 0px 10px;
-}
-
-.containerHourRight {
-  height: 260px;
 }
 
 .CardDetailLanguage {
@@ -88,20 +84,21 @@
 
 .cartDetailTitel {
   display: flex;
-  width: 75%;
   background: white;
   padding: 5px;
   border-radius: 20px;
   height: 41px;
-  margin: 10px 15px;
+  margin: 35px 45px;
   align-items: center;
   justify-content: center;
+  color: black;
 }
 .cardDetailTitlelft {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .cardDetailDayContainer {
@@ -113,28 +110,27 @@
 }
 
 .cardDetailImg {
-  height: 260px;
+  height: 300px;
   border-radius: 20px;
 }
 
 .cardDetailover {
   text-align: center;
   margin-bottom: 10px;
-  margin: 10px 5px;
+  margin: 40px 0px;
   background: white;
   border-radius: 20px;
   text-align: center;
-  padding: 6px 20px;
+  padding: 6px 25px;
+  color: black;
+  max-width: 885px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   .cardDetailContainer {
     display: flex;
     flex-direction: column;
-    width: 400px;
     justify-content: center;
-    box-shadow: -1px -1px 13px 3px rgb(247, 244, 244);
-    border-radius: 20px;
     padding: 5px 15px;
     margin-top: 5rem;
   }

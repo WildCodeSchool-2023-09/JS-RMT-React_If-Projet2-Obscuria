@@ -1,11 +1,15 @@
 import { Link, useLoaderData } from "react-router-dom";
 import "./MovieCard.css";
 import "./DetailMovie.css";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function DetailMovie() {
   const movie = useLoaderData();
+
   return (
     <div className="bigContainer">
+      <Header />
       <Link className="link" to="/">
         <figure className="cardDetailContainer">
           <div className="cartDetailTitel">
@@ -47,6 +51,7 @@ function DetailMovie() {
           <figcaption className="cardDetailover">{movie.overview}</figcaption>
         </figure>
       </Link>
+      <Footer />
     </div>
   );
 }
