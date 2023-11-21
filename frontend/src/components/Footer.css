@@ -1,9 +1,9 @@
 .container-low {
   margin-top: 2rem;
-  width: 90%;
   background: #546fe4;
   margin: auto;
   text-align: center;
+  padding: 0 10px;
 }
 .title-website-footer {
   padding-top: 1rem;
@@ -49,6 +49,11 @@
 .logo > a {
   color: #ffff;
   font-size: 35px;
+}
+@media (max-width: 550px) {
+  .container-low {
+    background: black;
+  }
 }
 
 @media (min-width: 600px) {

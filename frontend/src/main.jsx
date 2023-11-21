@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import axios from "axios";
 import App from "./App";
 import PageMovie from "./pages/PageMovie";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
     element: <App />,
     loader: () => {
       return axios
-        .get(`${import.meta.env.VITE_BACKEND_URL}/api/films?limit=8`)
+        .get(`${import.meta.env.VITE_BACKEND_URL}/api/films?limit=9`)
         .then((res) => res.data)
         .catch((err) => console.error(err));
     },
