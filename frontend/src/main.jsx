@@ -1,14 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import axios from "axios";
 import App from "./App";
+import PageMovie from "./pages/PageMovie";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    loader: () => {
+      return axios
+        .get(`${import.meta.env.VITE_BACKEND_URL}/api/films?limit=9`)
+        .then((res) => res.data)
+        .catch((err) => console.error(err));
+    },
+  },
+  {
+    path: "/films/:id",
+    element: <PageMovie />,
+    loader: ({ params }) => {
+      return axios
+        .get(`${import.meta.env.VITE_BACKEND_URL}/api/films/${params.id}`)
+        .then((res) => res.data)
+        .catch((err) => console.error(err));
+    },
   },
 ]);
 

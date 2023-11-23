@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-container {
+  height: 180px;
+  text-align: center;
+  padding-top: 25px;
+  margin: auto;
+}
+
+.title-website {
+  color: #ffee00;
+  font-family: "Monoton", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+
+.display-title {
+  font-family: "Montserrat", sans-serif;
+  color: #ffff;
+  text-decoration: underline;
+  font-size: 27px;
+}
+
+@media (max-width: 600px) {
+  .title-website {
+    font-size: 40px;
+  }
+  .display-title {
+    font-size: 20px;
+  }
+}
+

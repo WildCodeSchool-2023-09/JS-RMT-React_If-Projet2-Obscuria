@@ -1,0 +1,85 @@
+.container-low {
+  margin-top: 2rem;
+  background: #546fe4;
+  margin: auto;
+  text-align: center;
+  padding: 0 10px;
+}
+.title-website-footer {
+  padding-top: 1rem;
+  font-family: "Monoton", sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+  font-weight: 500;
+  color: #ffff;
+}
+
+.logo-contact {
+  display: grid;
+  grid-template-columns: 58% 42%;
+  align-items: center;
+  padding-bottom: 35px;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+.logo > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "Monofett", monospace;
+  color: #ffffff;
+  text-align: center;
+  flex-direction: column;
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-left: 15%;
+}
+.logo > a {
+  color: #ffff;
+  font-size: 35px;
+}
+@media (max-width: 550px) {
+  .container-low {
+    background: black;
+  }
+}
+
+@media (min-width: 600px) {
+  .top-container {
+    width: 70%;
+  }
+  .title-website {
+    font-size: 40px;
+  }
+  .display-title {
+    font-size: 20px;
+  }
+  .about {
+    font-size: 3rem;
+    margin-left: 20%;
+  }
+}
+@media (max-width: 450px) {
+  .logo {
+    gap: 10px;
+    padding-left: 5px;
+  }
+  .logo-contact {
+    padding-left: 5px;
+  }
+  .about {
+    margin-left: 0;
+  }
+}
